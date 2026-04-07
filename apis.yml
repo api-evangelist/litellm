@@ -23,10 +23,10 @@ apis:
       formatting, streaming support, cost tracking, and load balancing.
     humanURL: https://docs.litellm.ai/docs/completion
     tags:
+      - AI
       - Chat
       - Completions
       - LLM
-      - AI
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/completion
@@ -40,8 +40,8 @@ apis:
     humanURL: https://docs.litellm.ai/docs/text_completion
     tags:
       - Completions
-      - Text
       - LLM
+      - Text
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/text_completion
@@ -53,9 +53,9 @@ apis:
       via /responses/compact.
     humanURL: https://docs.litellm.ai/docs/response_api
     tags:
-      - Responses
       - AI
       - LLM
+      - Responses
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/response_api
@@ -67,9 +67,9 @@ apis:
       and Bedrock with unified formatting.
     humanURL: https://docs.litellm.ai/docs/embedding/supported_embedding
     tags:
+      - AI
       - Embeddings
       - Vectors
-      - AI
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/embedding/supported_embedding
@@ -81,9 +81,9 @@ apis:
       routed through the LiteLLM proxy.
     humanURL: https://docs.litellm.ai/docs/image_generation
     tags:
-      - Images
-      - Generation
       - AI
+      - Generation
+      - Images
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/image_generation
@@ -95,10 +95,10 @@ apis:
       supported providers.
     humanURL: https://docs.litellm.ai/docs/audio_transcription
     tags:
-      - Audio
-      - Transcription
-      - Speech
       - AI
+      - Audio
+      - Speech
+      - Transcription
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/audio_transcription
@@ -109,8 +109,8 @@ apis:
       moderation across supported providers through the LiteLLM proxy.
     humanURL: https://docs.litellm.ai/docs/moderation
     tags:
-      - Moderation
       - Content
+      - Moderation
       - Safety
     properties:
       - type: Documentation
@@ -161,9 +161,9 @@ apis:
       providers like Cohere through the LiteLLM proxy with a unified interface.
     humanURL: https://docs.litellm.ai/docs/rerank
     tags:
+      - Relevance
       - Rerank
       - Search
-      - Relevance
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/rerank
@@ -175,10 +175,10 @@ apis:
       retrieval-augmented generation (RAG) use cases.
     humanURL: https://docs.litellm.ai/docs/vector_stores/create
     tags:
-      - Vectors
-      - Storage
       - RAG
       - Search
+      - Storage
+      - Vectors
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/vector_stores/create
@@ -190,9 +190,9 @@ apis:
       proxy.
     humanURL: https://docs.litellm.ai/docs/anthropic_unified/
     tags:
+      - AI
       - Anthropic
       - Messages
-      - AI
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/anthropic_unified/
@@ -204,8 +204,8 @@ apis:
     humanURL: https://docs.litellm.ai/docs/realtime
     tags:
       - Realtime
-      - WebSocket
       - Streaming
+      - WebSocket
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/realtime
@@ -218,8 +218,8 @@ apis:
     humanURL: https://docs.litellm.ai/docs/mcp
     tags:
       - MCP
-      - Tools
       - Protocols
+      - Tools
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/mcp
@@ -231,8 +231,8 @@ apis:
       LiteLLM proxy.
     humanURL: https://docs.litellm.ai/docs/ocr
     tags:
-      - OCR
       - Images
+      - OCR
       - Text Extraction
     properties:
       - type: Documentation
@@ -244,9 +244,9 @@ apis:
       content filtering and safety guardrails to LLM requests and responses.
     humanURL: https://docs.litellm.ai/docs/apply_guardrail
     tags:
+      - Content Filtering
       - Guardrails
       - Safety
-      - Content Filtering
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/apply_guardrail
@@ -257,8 +257,8 @@ apis:
       and benchmarking of model performance through the LiteLLM proxy.
     humanURL: https://docs.litellm.ai/docs/evals_api
     tags:
-      - Evaluations
       - Benchmarks
+      - Evaluations
       - Performance
     properties:
       - type: Documentation
@@ -270,8 +270,8 @@ apis:
       agent registration, publishing, and inter-agent communication.
     humanURL: https://docs.litellm.ai/docs/a2a
     tags:
-      - Agents
       - A2A
+      - Agents
       - Gateway
     properties:
       - type: Documentation
@@ -283,9 +283,9 @@ apis:
       supported providers like RunwayML via the LiteLLM proxy.
     humanURL: https://docs.litellm.ai/docs/videos
     tags:
-      - Videos
-      - Generation
       - AI
+      - Generation
+      - Videos
     properties:
       - type: Documentation
         url: https://docs.litellm.ai/docs/videos
