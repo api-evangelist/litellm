@@ -5,14 +5,14 @@ segments:
 description: >-
   LiteLLM is an open-source Python SDK and proxy server providing a unified OpenAI-compatible interface to 100+ LLM providers.
 type: Index
-position: Consumer
+position: Consuming
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Gateways
 created: '2026-03-03'
-modified: '2026-03-16'
-url: https://raw.githubusercontent.com/api-evangelist/litellm/refs/heads/main/apis.yml
+modified: '2026-04-28'
+url: https://raw.githubusercontent.com/api-evangelist/litellm/refs/heads/master/apis.yml
 specificationVersion: '0.19'
 apis:
   - aid: litellm:chat-completions-api
