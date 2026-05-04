@@ -1,0 +1,282 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+provider: LiteLLM
+providerId: litellm
+publisherName: LiteLLM
+serviceCategory: API
+created: '2026-05-04'
+modified: '2026-05-04'
+tags:
+  - Gateways
+  - FinOps
+  - Cost Management
+  - FOCUS
+description: FinOps framework definition for the LiteLLM API surface. Provides a FOCUS-aligned mapping
+  for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
+principles:
+  - name: Visibility
+    description: Make API consumption costs visible to engineering, product, and finance teams in near
+      real-time.
+  - name: Allocation
+    description: Tag every chargeable API call with the consuming team, environment, application, and
+      feature so cost can be allocated.
+  - name: Optimization
+    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
+      cost per useful unit of work.
+  - name: Accountability
+    description: Establish budget owners and chargeback or showback flows for each consuming team.
+domains:
+  - name: Understand Usage and Cost
+    capabilities:
+      - Data Ingestion
+      - Allocation
+      - Reporting and Analytics
+      - Anomaly Management
+  - name: Quantify Business Value
+    capabilities:
+      - Planning and Estimating
+      - Forecasting
+      - Budgeting
+      - Benchmarking
+      - Unit Economics
+  - name: Optimize Usage and Cost
+    capabilities:
+      - Architecting for Cloud
+      - Rate Optimization
+      - Workload Optimization
+      - Cloud Sustainability
+      - Licensing and SaaS
+  - name: Manage the FinOps Practice
+    capabilities:
+      - FinOps Practice Operations
+      - FinOps Education and Enablement
+      - Invoicing and Chargeback
+      - Onboarding Workloads
+      - Intersecting Disciplines
+billingModel:
+  pricingCategory: Usage-Based
+  billingFrequency: Monthly
+  billingCurrency: USD
+  chargeCategories:
+    - Usage
+    - Purchase
+    - Tax
+    - Credit
+    - Adjustment
+  chargeFrequency: Recurring
+focusColumns:
+  ServiceName: LiteLLM
+  ServiceCategory: Developer Tools / API
+  ProviderName: LiteLLM
+  PublisherName: LiteLLM
+  InvoiceIssuerName: LiteLLM
+  PricingCategory: Usage-Based
+  PricingUnit: request
+  BillingCurrency: USD
+  ChargeCategory: Usage
+meters:
+  - name: api_requests
+    description: Count of billable API requests
+    unit: request
+    aggregation: sum
+    dimensions:
+      - api
+      - endpoint
+      - tier
+      - region
+      - consumer
+  - name: data_egress
+    description: Bytes returned over the network in API responses
+    unit: GB
+    aggregation: sum
+    dimensions:
+      - api
+      - region
+      - consumer
+  - name: compute_seconds
+    description: Server-side compute consumed by the request, where applicable
+    unit: second
+    aggregation: sum
+    dimensions:
+      - api
+      - endpoint
+      - tier
+apis:
+  - name: LiteLLM Chat Completions API
+    baseURL: ''
+    tags:
+      - AI
+      - Chat
+      - Completions
+      - LLM
+    serviceName: LiteLLM Chat Completions API
+    serviceCategory: API
+  - name: LiteLLM Completions API
+    baseURL: ''
+    tags:
+      - Completions
+      - LLM
+      - Text
+    serviceName: LiteLLM Completions API
+    serviceCategory: API
+  - name: LiteLLM Responses API
+    baseURL: ''
+    tags:
+      - AI
+      - LLM
+      - Responses
+    serviceName: LiteLLM Responses API
+    serviceCategory: API
+  - name: LiteLLM Embeddings API
+    baseURL: ''
+    tags:
+      - AI
+      - Embeddings
+      - Vectors
+    serviceName: LiteLLM Embeddings API
+    serviceCategory: API
+  - name: LiteLLM Image Generation API
+    baseURL: ''
+    tags:
+      - AI
+      - Generation
+      - Images
+    serviceName: LiteLLM Image Generation API
+    serviceCategory: API
+  - name: LiteLLM Audio API
+    baseURL: ''
+    tags:
+      - AI
+      - Audio
+      - Speech
+      - Transcription
+    serviceName: LiteLLM Audio API
+    serviceCategory: API
+  - name: LiteLLM Moderations API
+    baseURL: ''
+    tags:
+      - Content
+      - Moderation
+      - Safety
+    serviceName: LiteLLM Moderations API
+    serviceCategory: API
+  - name: LiteLLM Batches API
+    baseURL: ''
+    tags:
+      - Batches
+      - Bulk
+      - Processing
+    serviceName: LiteLLM Batches API
+    serviceCategory: API
+  - name: LiteLLM Files API
+    baseURL: ''
+    tags:
+      - Files
+      - Management
+    serviceName: LiteLLM Files API
+    serviceCategory: API
+  - name: LiteLLM Fine-Tuning API
+    baseURL: ''
+    tags:
+      - Fine-Tuning
+      - Models
+      - Training
+    serviceName: LiteLLM Fine-Tuning API
+    serviceCategory: API
+  - name: LiteLLM Rerank API
+    baseURL: ''
+    tags:
+      - Relevance
+      - Rerank
+      - Search
+    serviceName: LiteLLM Rerank API
+    serviceCategory: API
+  - name: LiteLLM Vector Stores API
+    baseURL: ''
+    tags:
+      - RAG
+      - Search
+      - Storage
+      - Vectors
+    serviceName: LiteLLM Vector Stores API
+    serviceCategory: API
+  - name: LiteLLM Anthropic Messages API
+    baseURL: ''
+    tags:
+      - AI
+      - Anthropic
+      - Messages
+    serviceName: LiteLLM Anthropic Messages API
+    serviceCategory: API
+  - name: LiteLLM Realtime API
+    baseURL: ''
+    tags:
+      - Realtime
+      - Streaming
+      - WebSocket
+    serviceName: LiteLLM Realtime API
+    serviceCategory: API
+  - name: LiteLLM MCP API
+    baseURL: ''
+    tags:
+      - MCP
+      - Protocols
+      - Tools
+    serviceName: LiteLLM MCP API
+    serviceCategory: API
+  - name: LiteLLM OCR API
+    baseURL: ''
+    tags:
+      - Images
+      - OCR
+      - Text Extraction
+    serviceName: LiteLLM OCR API
+    serviceCategory: API
+  - name: LiteLLM Guardrails API
+    baseURL: ''
+    tags:
+      - Content Filtering
+      - Guardrails
+      - Safety
+    serviceName: LiteLLM Guardrails API
+    serviceCategory: API
+  - name: LiteLLM Evals API
+    baseURL: ''
+    tags:
+      - Benchmarks
+      - Evaluations
+      - Performance
+    serviceName: LiteLLM Evals API
+    serviceCategory: API
+  - name: LiteLLM A2A Agent Gateway API
+    baseURL: ''
+    tags:
+      - A2A
+      - Agents
+      - Gateway
+    serviceName: LiteLLM A2A Agent Gateway API
+    serviceCategory: API
+  - name: LiteLLM Videos API
+    baseURL: ''
+    tags:
+      - AI
+      - Generation
+      - Videos
+    serviceName: LiteLLM Videos API
+    serviceCategory: API
+unitEconomics:
+  - name: Cost per 1K Requests
+    metric: billed_cost / (api_requests / 1000)
+    target: TBD
+  - name: Cost per Active Consumer
+    metric: billed_cost / active_consumers
+    target: TBD
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
