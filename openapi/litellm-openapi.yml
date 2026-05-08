@@ -1,0 +1,196 @@
+openapi: 3.1.0
+info:
+  title: LiteLLM Proxy API
+  description: >-
+    Minimal OpenAPI 3.1 specification for the LiteLLM proxy server,
+    covering chat completions, completions, embeddings, audio, images,
+    moderations, fine-tuning, batches, assistants, vector stores,
+    messages, OCR, rerank, and RAG endpoints.
+  version: 1.0.0
+x-generated-from: https://docs.litellm.ai/docs/completion
+x-generated-by: claude-crawl-2026-05-08
+servers:
+  - url: http://localhost:4000
+    description: LiteLLM proxy server
+paths:
+  /chat/completions:
+    post:
+      operationId: createChatCompletion
+      summary: Create a chat completion
+      responses:
+        '200':
+          description: Chat completion result
+        default:
+          description: Error response
+  /completions:
+    post:
+      operationId: createCompletion
+      summary: Create a text completion
+      responses:
+        '200':
+          description: Text completion result
+        default:
+          description: Error response
+  /embeddings:
+    post:
+      operationId: createEmbedding
+      summary: Create an embedding vector
+      responses:
+        '200':
+          description: Embedding result
+        default:
+          description: Error response
+  /audio/transcriptions:
+    post:
+      operationId: createAudioTranscription
+      summary: Transcribe audio to text
+      responses:
+        '200':
+          description: Transcription result
+        default:
+          description: Error response
+  /audio/speech:
+    post:
+      operationId: createAudioSpeech
+      summary: Synthesize speech from text
+      responses:
+        '200':
+          description: Audio response
+        default:
+          description: Error response
+  /images/generations:
+    post:
+      operationId: createImageGeneration
+      summary: Generate images
+      responses:
+        '200':
+          description: Generated images
+        default:
+          description: Error response
+  /images/edits:
+    post:
+      operationId: createImageEdit
+      summary: Edit an image
+      responses:
+        '200':
+          description: Edited image
+        default:
+          description: Error response
+  /images/variations:
+    post:
+      operationId: createImageVariation
+      summary: Generate image variations
+      responses:
+        '200':
+          description: Image variations
+        default:
+          description: Error response
+  /moderations:
+    post:
+      operationId: createModeration
+      summary: Classify text for moderation
+      responses:
+        '200':
+          description: Moderation result
+        default:
+          description: Error response
+  /fine_tuning/jobs:
+    post:
+      operationId: createFineTuningJob
+      summary: Create a fine-tuning job
+      responses:
+        '200':
+          description: Fine-tuning job created
+        default:
+          description: Error response
+  /batches:
+    post:
+      operationId: createBatch
+      summary: Create a batch job
+      responses:
+        '200':
+          description: Batch job created
+        default:
+          description: Error response
+  /assistants:
+    post:
+      operationId: createAssistant
+      summary: Create an assistant
+      responses:
+        '200':
+          description: Assistant created
+        default:
+          description: Error response
+  /vector_stores:
+    post:
+      operationId: createVectorStore
+      summary: Create a vector store
+      responses:
+        '200':
+          description: Vector store created
+        default:
+          description: Error response
+  /vector_stores/search:
+    post:
+      operationId: searchVectorStore
+      summary: Search a vector store
+      responses:
+        '200':
+          description: Search result
+        default:
+          description: Error response
+  /v1/messages:
+    post:
+      operationId: createMessage
+      summary: Create a message (Anthropic-compatible)
+      responses:
+        '200':
+          description: Message result
+        default:
+          description: Error response
+  /v1/messages/count_tokens:
+    post:
+      operationId: countMessageTokens
+      summary: Count tokens for a message
+      responses:
+        '200':
+          description: Token count
+        default:
+          description: Error response
+  /ocr:
+    post:
+      operationId: createOcr
+      summary: Run OCR on an image
+      responses:
+        '200':
+          description: OCR result
+        default:
+          description: Error response
+  /rerank:
+    post:
+      operationId: rerankDocuments
+      summary: Rerank documents against a query
+      responses:
+        '200':
+          description: Rerank result
+        default:
+          description: Error response
+  /rag/ingest:
+    post:
+      operationId: ragIngest
+      summary: Ingest documents into a RAG index
+      responses:
+        '200':
+          description: Ingestion accepted
+        default:
+          description: Error response
+  /rag/query:
+    post:
+      operationId: ragQuery
+      summary: Query a RAG index
+      responses:
+        '200':
+          description: Query result
+        default:
+          description: Error response
+components: {}

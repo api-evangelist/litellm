@@ -32,6 +32,8 @@ apis:
         url: https://docs.litellm.ai/docs/completion
       - type: GettingStarted
         url: https://docs.litellm.ai/docs/proxy/quick_start
+      - type: OpenAPI
+        url: openapi/litellm-openapi.yml
   - aid: litellm:completions-api
     name: LiteLLM Completions API
     description: >-
