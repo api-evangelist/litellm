@@ -306,7 +306,7 @@ common:
     url: https://www.litellm.ai/changelog
   - type: ReleaseNotes
     url: https://docs.litellm.ai/release_notes
-  - type: Status
+  - type: StatusPage
     url: https://status.litellm.ai/
   - type: Support
     url: https://www.litellm.ai/support
