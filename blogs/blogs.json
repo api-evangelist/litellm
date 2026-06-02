@@ -2,12 +2,20 @@
   "repo": "litellm",
   "feeds": [
     {
-      "source": "https://docs.litellm.ai/blog",
+      "source": "https://docs.litellm.ai/blog/atom.xml",
       "feed_url": "https://docs.litellm.ai/blog/atom.xml",
-      "title": "liteLLM Blog",
-      "saved": 14
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://github.com/BerriAI/litellm",
+      "feed_url": "https://github.com/BerriAI/litellm",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "post_count": 26,
-  "fetched": "2026-05-17T20:20:35Z"
+  "post_count": 35,
+  "fetched": "2026-06-01T23:35:02Z"
 }
