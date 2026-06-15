@@ -1,0 +1,230 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiteLLM Proxy API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Create a chat completion",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/chat/completions"
+      },
+      "docs": "Create a chat completion"
+    },
+    {
+      "info": {
+        "name": "Create a text completion",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/completions"
+      },
+      "docs": "Create a text completion"
+    },
+    {
+      "info": {
+        "name": "Create an embedding vector",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/embeddings"
+      },
+      "docs": "Create an embedding vector"
+    },
+    {
+      "info": {
+        "name": "Transcribe audio to text",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/audio/transcriptions"
+      },
+      "docs": "Transcribe audio to text"
+    },
+    {
+      "info": {
+        "name": "Synthesize speech from text",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/audio/speech"
+      },
+      "docs": "Synthesize speech from text"
+    },
+    {
+      "info": {
+        "name": "Generate images",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/images/generations"
+      },
+      "docs": "Generate images"
+    },
+    {
+      "info": {
+        "name": "Edit an image",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/images/edits"
+      },
+      "docs": "Edit an image"
+    },
+    {
+      "info": {
+        "name": "Generate image variations",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/images/variations"
+      },
+      "docs": "Generate image variations"
+    },
+    {
+      "info": {
+        "name": "Classify text for moderation",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/moderations"
+      },
+      "docs": "Classify text for moderation"
+    },
+    {
+      "info": {
+        "name": "Create a fine-tuning job",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/fine_tuning/jobs"
+      },
+      "docs": "Create a fine-tuning job"
+    },
+    {
+      "info": {
+        "name": "Create a batch job",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/batches"
+      },
+      "docs": "Create a batch job"
+    },
+    {
+      "info": {
+        "name": "Create an assistant",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/assistants"
+      },
+      "docs": "Create an assistant"
+    },
+    {
+      "info": {
+        "name": "Create a vector store",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/vector_stores"
+      },
+      "docs": "Create a vector store"
+    },
+    {
+      "info": {
+        "name": "Search a vector store",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/vector_stores/search"
+      },
+      "docs": "Search a vector store"
+    },
+    {
+      "info": {
+        "name": "Create a message (Anthropic-compatible)",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/v1/messages"
+      },
+      "docs": "Create a message (Anthropic-compatible)"
+    },
+    {
+      "info": {
+        "name": "Count tokens for a message",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/v1/messages/count_tokens"
+      },
+      "docs": "Count tokens for a message"
+    },
+    {
+      "info": {
+        "name": "Run OCR on an image",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/ocr"
+      },
+      "docs": "Run OCR on an image"
+    },
+    {
+      "info": {
+        "name": "Rerank documents against a query",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/rerank"
+      },
+      "docs": "Rerank documents against a query"
+    },
+    {
+      "info": {
+        "name": "Ingest documents into a RAG index",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/rag/ingest"
+      },
+      "docs": "Ingest documents into a RAG index"
+    },
+    {
+      "info": {
+        "name": "Query a RAG index",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://localhost:4000/rag/query"
+      },
+      "docs": "Query a RAG index"
+    }
+  ],
+  "bundled": true
+}

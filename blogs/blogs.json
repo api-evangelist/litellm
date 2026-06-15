@@ -5,7 +5,7 @@
       "source": "https://docs.litellm.ai/blog/atom.xml",
       "feed_url": "https://docs.litellm.ai/blog/atom.xml",
       "title": "",
-      "saved": 0,
+      "saved": 2,
       "method": "feed"
     },
     {
@@ -16,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 35,
-  "fetched": "2026-06-01T23:35:02Z"
+  "post_count": 39,
+  "fetched": "2026-06-14T20:42:17Z"
 }

@@ -1,316 +1,401 @@
 # LiteLLM (litellm)
+
 LiteLLM is an open-source Python SDK and proxy server providing a unified OpenAI-compatible interface to 100+ LLM providers.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/litellm/refs/heads/main/apis.yml)
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/litellm/refs/heads/master/apis.yml](https://raw.githubusercontent.com/api-evangelist/litellm/refs/heads/master/apis.yml)
 
 ## Scope
 
-- **Type:** Index 
-- **Position:** Consuming 
-- **Access:** 3rd-Party 
+- **Type:** Index
+- **Position:** Consuming
+- **Access:** 3rd-Party
 
-## Tags:
+## Tags
 
- - Gateways
+- Gateways
 
 ## Timestamps
 
-- **Created:** 2026-03-03 
-- **Modified:** 2026-03-16 
+- **Created:** 2026-03-03
+- **Modified:** 2026-05-19
 
 ## APIs
 
 ### LiteLLM Chat Completions API
+
 Provides an OpenAI-compatible /chat/completions endpoint that routes requests to 100+ LLM providers with unified request and response formatting, streaming support, cost tracking, and load balancing.
 
-**Human URL:** [https://docs.litellm.ai/docs/completion](https://docs.litellm.ai/docs/completion)
+- **Human URL:** [https://docs.litellm.ai/docs/completion](https://docs.litellm.ai/docs/completion)
 
+#### Tags
 
-#### Tags:
-
- - Chat, Completions, LLM, AI
+- AI
+- Chat
+- Completions
+- LLM
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/completion)
-- [GettingStarted](https://docs.litellm.ai/docs/proxy/quick_start)
+- [Getting Started](https://docs.litellm.ai/docs/proxy/quick_start)
+- [OpenAPI](openapi/litellm-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Completions API
+
 Provides an OpenAI-compatible /completions endpoint for text completion requests routed through the LiteLLM proxy to supported LLM providers.
 
-**Human URL:** [https://docs.litellm.ai/docs/text_completion](https://docs.litellm.ai/docs/text_completion)
+- **Human URL:** [https://docs.litellm.ai/docs/text_completion](https://docs.litellm.ai/docs/text_completion)
 
+#### Tags
 
-#### Tags:
-
- - Completions, Text, LLM
+- Completions
+- LLM
+- Text
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/text_completion)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Responses API
+
 Provides an OpenAI-compatible /responses endpoint supporting the Responses API specification, including conversation history compression via /responses/compact.
 
-**Human URL:** [https://docs.litellm.ai/docs/response_api](https://docs.litellm.ai/docs/response_api)
+- **Human URL:** [https://docs.litellm.ai/docs/response_api](https://docs.litellm.ai/docs/response_api)
 
+#### Tags
 
-#### Tags:
-
- - Responses, AI, LLM
+- AI
+- LLM
+- Responses
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/response_api)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Embeddings API
+
 Provides an OpenAI-compatible /embeddings endpoint for generating text embeddings across multiple providers including OpenAI, Cohere, HuggingFace, and Bedrock with unified formatting.
 
-**Human URL:** [https://docs.litellm.ai/docs/embedding/supported_embedding](https://docs.litellm.ai/docs/embedding/supported_embedding)
+- **Human URL:** [https://docs.litellm.ai/docs/embedding/supported_embedding](https://docs.litellm.ai/docs/embedding/supported_embedding)
 
+#### Tags
 
-#### Tags:
-
- - Embeddings, Vectors, AI
+- AI
+- Embeddings
+- Vectors
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/embedding/supported_embedding)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Image Generation API
+
 Provides OpenAI-compatible /images/generations, /images/edits, and /images/variations endpoints for image generation and manipulation routed through the LiteLLM proxy.
 
-**Human URL:** [https://docs.litellm.ai/docs/image_generation](https://docs.litellm.ai/docs/image_generation)
+- **Human URL:** [https://docs.litellm.ai/docs/image_generation](https://docs.litellm.ai/docs/image_generation)
 
+#### Tags
 
-#### Tags:
-
- - Images, Generation, AI
+- AI
+- Generation
+- Images
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/image_generation)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Audio API
+
 Provides OpenAI-compatible /audio/transcriptions and /audio/speech endpoints for audio transcription and text-to-speech conversion across supported providers.
 
-**Human URL:** [https://docs.litellm.ai/docs/audio_transcription](https://docs.litellm.ai/docs/audio_transcription)
+- **Human URL:** [https://docs.litellm.ai/docs/audio_transcription](https://docs.litellm.ai/docs/audio_transcription)
 
+#### Tags
 
-#### Tags:
-
- - Audio, Transcription, Speech, AI
+- AI
+- Audio
+- Speech
+- Transcription
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/audio_transcription)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Moderations API
+
 Provides an OpenAI-compatible /moderations endpoint for content moderation across supported providers through the LiteLLM proxy.
 
-**Human URL:** [https://docs.litellm.ai/docs/moderation](https://docs.litellm.ai/docs/moderation)
+- **Human URL:** [https://docs.litellm.ai/docs/moderation](https://docs.litellm.ai/docs/moderation)
 
+#### Tags
 
-#### Tags:
-
- - Moderation, Content, Safety
+- Content
+- Moderation
+- Safety
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/moderation)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Batches API
+
 Provides an OpenAI-compatible /batches endpoint for batch processing operations, enabling bulk request handling across LLM providers.
 
-**Human URL:** [https://docs.litellm.ai/docs/batches](https://docs.litellm.ai/docs/batches)
+- **Human URL:** [https://docs.litellm.ai/docs/batches](https://docs.litellm.ai/docs/batches)
 
+#### Tags
 
-#### Tags:
-
- - Batches, Bulk, Processing
+- Batches
+- Bulk
+- Processing
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/batches)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Files API
+
 Provides an OpenAI-compatible /files endpoint for file management operations used in conjunction with fine-tuning and batch processing.
 
-**Human URL:** [https://docs.litellm.ai/docs/files_endpoints](https://docs.litellm.ai/docs/files_endpoints)
+- **Human URL:** [https://docs.litellm.ai/docs/files_endpoints](https://docs.litellm.ai/docs/files_endpoints)
 
+#### Tags
 
-#### Tags:
-
- - Files, Management
+- Files
+- Management
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/files_endpoints)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Fine-Tuning API
+
 Provides an OpenAI-compatible /fine_tuning endpoint for model fine-tuning operations across supported providers through the LiteLLM proxy.
 
-**Human URL:** [https://docs.litellm.ai/docs/fine_tuning](https://docs.litellm.ai/docs/fine_tuning)
+- **Human URL:** [https://docs.litellm.ai/docs/fine_tuning](https://docs.litellm.ai/docs/fine_tuning)
 
+#### Tags
 
-#### Tags:
-
- - Fine-Tuning, Models, Training
+- Fine-Tuning
+- Models
+- Training
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/fine_tuning)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Rerank API
+
 Provides a /rerank endpoint for document reranking operations, supporting providers like Cohere through the LiteLLM proxy with a unified interface.
 
-**Human URL:** [https://docs.litellm.ai/docs/rerank](https://docs.litellm.ai/docs/rerank)
+- **Human URL:** [https://docs.litellm.ai/docs/rerank](https://docs.litellm.ai/docs/rerank)
 
+#### Tags
 
-#### Tags:
-
- - Rerank, Search, Relevance
+- Relevance
+- Rerank
+- Search
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/rerank)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Vector Stores API
+
 Provides /vector_stores endpoints for creating and managing vector stores, file operations within vector stores, and search functionality for retrieval-augmented generation (RAG) use cases.
 
-**Human URL:** [https://docs.litellm.ai/docs/vector_stores/create](https://docs.litellm.ai/docs/vector_stores/create)
+- **Human URL:** [https://docs.litellm.ai/docs/vector_stores/create](https://docs.litellm.ai/docs/vector_stores/create)
 
+#### Tags
 
-#### Tags:
-
- - Vectors, Storage, RAG, Search
+- RAG
+- Search
+- Storage
+- Vectors
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/vector_stores/create)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Anthropic Messages API
+
 Provides Anthropic-compatible /v1/messages and /v1/messages/count_tokens endpoints for native Anthropic API format support through the LiteLLM proxy.
 
-**Human URL:** [https://docs.litellm.ai/docs/anthropic_unified/](https://docs.litellm.ai/docs/anthropic_unified/)
+- **Human URL:** [https://docs.litellm.ai/docs/anthropic_unified/](https://docs.litellm.ai/docs/anthropic_unified/)
 
+#### Tags
 
-#### Tags:
-
- - Anthropic, Messages, AI
+- AI
+- Anthropic
+- Messages
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/anthropic_unified/)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Realtime API
+
 Provides /realtime WebSocket endpoints for real-time model interactions with load balancing and guardrails support across providers.
 
-**Human URL:** [https://docs.litellm.ai/docs/realtime](https://docs.litellm.ai/docs/realtime)
+- **Human URL:** [https://docs.litellm.ai/docs/realtime](https://docs.litellm.ai/docs/realtime)
 
+#### Tags
 
-#### Tags:
-
- - Realtime, WebSocket, Streaming
+- Realtime
+- Streaming
+- WebSocket
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/realtime)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM MCP API
+
 Provides /mcp endpoints for Model Context Protocol (MCP) integration, enabling LLMs to interact with external tools and APIs through OpenAPI specifications.
 
-**Human URL:** [https://docs.litellm.ai/docs/mcp](https://docs.litellm.ai/docs/mcp)
+- **Human URL:** [https://docs.litellm.ai/docs/mcp](https://docs.litellm.ai/docs/mcp)
 
+#### Tags
 
-#### Tags:
-
- - MCP, Tools, Protocols
+- MCP
+- Protocols
+- Tools
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/mcp)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM OCR API
+
 Provides an /ocr endpoint for optical character recognition, enabling text extraction from images through supported providers via the LiteLLM proxy.
 
-**Human URL:** [https://docs.litellm.ai/docs/ocr](https://docs.litellm.ai/docs/ocr)
+- **Human URL:** [https://docs.litellm.ai/docs/ocr](https://docs.litellm.ai/docs/ocr)
 
+#### Tags
 
-#### Tags:
-
- - OCR, Images, Text Extraction
+- Images
+- OCR
+- Text Extraction
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/ocr)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Guardrails API
+
 Provides /guardrails/apply_guardrail endpoint for applying configured content filtering and safety guardrails to LLM requests and responses.
 
-**Human URL:** [https://docs.litellm.ai/docs/apply_guardrail](https://docs.litellm.ai/docs/apply_guardrail)
+- **Human URL:** [https://docs.litellm.ai/docs/apply_guardrail](https://docs.litellm.ai/docs/apply_guardrail)
 
+#### Tags
 
-#### Tags:
-
- - Guardrails, Safety, Content Filtering
+- Content Filtering
+- Guardrails
+- Safety
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/apply_guardrail)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Evals API
+
 Provides /evals endpoints for the Evaluations API, enabling measurement and benchmarking of model performance through the LiteLLM proxy.
 
-**Human URL:** [https://docs.litellm.ai/docs/evals_api](https://docs.litellm.ai/docs/evals_api)
+- **Human URL:** [https://docs.litellm.ai/docs/evals_api](https://docs.litellm.ai/docs/evals_api)
 
+#### Tags
 
-#### Tags:
-
- - Evaluations, Benchmarks, Performance
+- Benchmarks
+- Evaluations
+- Performance
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/evals_api)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM A2A Agent Gateway API
+
 Provides /a2a endpoints for the Agent-to-Agent (A2A) gateway, enabling agent registration, publishing, and inter-agent communication.
 
-**Human URL:** [https://docs.litellm.ai/docs/a2a](https://docs.litellm.ai/docs/a2a)
+- **Human URL:** [https://docs.litellm.ai/docs/a2a](https://docs.litellm.ai/docs/a2a)
 
+#### Tags
 
-#### Tags:
-
- - Agents, A2A, Gateway
+- A2A
+- Agents
+- Gateway
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/a2a)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### LiteLLM Videos API
+
 Provides /videos endpoints for video generation and handling through supported providers like RunwayML via the LiteLLM proxy.
 
-**Human URL:** [https://docs.litellm.ai/docs/videos](https://docs.litellm.ai/docs/videos)
+- **Human URL:** [https://docs.litellm.ai/docs/videos](https://docs.litellm.ai/docs/videos)
 
+#### Tags
 
-#### Tags:
-
- - Videos, Generation, AI
+- AI
+- Generation
+- Videos
 
 #### Properties
 
 - [Documentation](https://docs.litellm.ai/docs/videos)
+- [Postman Collection](collections/litellm.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/litellm.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
+- [LinkedIn](https://www.linkedin.com/company/litellm)
 - [Portal](https://www.litellm.ai/)
 - [Documentation](https://docs.litellm.ai/docs/)
-- [GettingStarted](https://docs.litellm.ai/docs/proxy/quick_start)
-- [GitHubOrg](https://github.com/BerriAI/litellm)
+- [Getting Started](https://docs.litellm.ai/docs/proxy/quick_start)
+- [Git Hub Org](https://github.com/BerriAI/litellm)
 - [Blog](https://docs.litellm.ai/blog)
-- [ChangeLog](https://www.litellm.ai/changelog)
-- [ReleaseNotes](https://docs.litellm.ai/release_notes)
-- [Status](https://status.litellm.ai/)
+- [Changelog](https://www.litellm.ai/changelog)
+- [Release Notes](https://docs.litellm.ai/release_notes)
+- [Status Page](https://status.litellm.ai/)
 - [Support](https://www.litellm.ai/support)
 - [Pricing](https://docs.litellm.ai/docs/enterprise)
 - [Dashboard](https://admin.litellm.ai/)
@@ -320,13 +405,13 @@ Provides /videos endpoints for video generation and handling through supported p
 - [Authentication](https://docs.litellm.ai/docs/set_keys)
 - [Guardrails](https://docs.litellm.ai/docs/apply_guardrail)
 - [Enterprise](https://docs.litellm.ai/docs/proxy/enterprise)
-- [ReleaseCycle](https://docs.litellm.ai/docs/proxy/release_cycle)
-- [SSO](https://docs.litellm.ai/docs/proxy/admin_ui_sso)
+- [Release Cycle](https://docs.litellm.ai/docs/proxy/release_cycle)
+- [S S O](https://docs.litellm.ai/docs/proxy/admin_ui_sso)
 - [Docker](https://docs.litellm.ai/docs/proxy/docker_quick_start)
-- [PyPI](https://pypi.org/project/litellm/)
+- [Py P I](https://pypi.org/project/litellm/)
+- [L L Ms Txt](https://docs.litellm.ai/llms.txt)
 
 ## Maintainers
 
 **FN:** Kin Lane
-
 **Email:** kin@apievangelist.com
