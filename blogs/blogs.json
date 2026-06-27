@@ -2,10 +2,10 @@
   "repo": "litellm",
   "feeds": [
     {
-      "source": "https://docs.litellm.ai/blog/atom.xml",
-      "feed_url": "https://docs.litellm.ai/blog/atom.xml",
+      "source": "https://docs.litellm.ai/blog/rss.xml",
+      "feed_url": "https://docs.litellm.ai/blog/rss.xml",
       "title": "",
-      "saved": 2,
+      "saved": 4,
       "method": "feed"
     },
     {
@@ -16,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 39,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 46,
+  "fetched": "2026-06-27T12:03:07Z"
 }

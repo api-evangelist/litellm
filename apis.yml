@@ -327,7 +327,7 @@ common:
     url: https://docs.litellm.ai/docs/proxy/docker_quick_start
   - type: PyPI
     url: https://pypi.org/project/litellm/
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.litellm.ai/llms.txt
 maintainers:
   - FN: Kin Lane
