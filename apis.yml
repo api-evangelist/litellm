@@ -283,6 +283,8 @@ apis:
       - type: Documentation
         url: https://docs.litellm.ai/docs/videos
 common:
+  - type: DomainSecurity
+    url: security/litellm-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/litellm
   - type: Portal
