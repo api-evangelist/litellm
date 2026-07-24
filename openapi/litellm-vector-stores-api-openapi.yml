@@ -1,0 +1,35 @@
+openapi: 3.1.0
+info:
+  title: LiteLLM Proxy Assistants Vector Stores API
+  description: Minimal OpenAPI 3.1 specification for the LiteLLM proxy server, covering chat completions, completions, embeddings, audio, images, moderations, fine-tuning, batches, assistants, vector stores, messages, OCR, rerank, and RAG endpoints.
+  version: 1.0.0
+servers:
+- url: http://localhost:4000
+  description: LiteLLM proxy server
+tags:
+- name: Vector Stores
+paths:
+  /vector_stores:
+    post:
+      operationId: createVectorStore
+      summary: Create a vector store
+      responses:
+        '200':
+          description: Vector store created
+        default:
+          description: Error response
+      tags:
+      - Vector Stores
+  /vector_stores/search:
+    post:
+      operationId: searchVectorStore
+      summary: Search a vector store
+      responses:
+        '200':
+          description: Search result
+        default:
+          description: Error response
+      tags:
+      - Vector Stores
+x-generated-from: https://docs.litellm.ai/docs/completion
+x-generated-by: claude-crawl-2026-05-08

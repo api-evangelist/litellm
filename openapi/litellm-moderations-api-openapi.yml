@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: LiteLLM Proxy Assistants Moderations API
+  description: Minimal OpenAPI 3.1 specification for the LiteLLM proxy server, covering chat completions, completions, embeddings, audio, images, moderations, fine-tuning, batches, assistants, vector stores, messages, OCR, rerank, and RAG endpoints.
+  version: 1.0.0
+servers:
+- url: http://localhost:4000
+  description: LiteLLM proxy server
+tags:
+- name: Moderations
+paths:
+  /moderations:
+    post:
+      operationId: createModeration
+      summary: Classify text for moderation
+      responses:
+        '200':
+          description: Moderation result
+        default:
+          description: Error response
+      tags:
+      - Moderations
+x-generated-from: https://docs.litellm.ai/docs/completion
+x-generated-by: claude-crawl-2026-05-08

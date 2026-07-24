@@ -1,0 +1,35 @@
+openapi: 3.1.0
+info:
+  title: LiteLLM Proxy Assistants Audio API
+  description: Minimal OpenAPI 3.1 specification for the LiteLLM proxy server, covering chat completions, completions, embeddings, audio, images, moderations, fine-tuning, batches, assistants, vector stores, messages, OCR, rerank, and RAG endpoints.
+  version: 1.0.0
+servers:
+- url: http://localhost:4000
+  description: LiteLLM proxy server
+tags:
+- name: Audio
+paths:
+  /audio/transcriptions:
+    post:
+      operationId: createAudioTranscription
+      summary: Transcribe audio to text
+      responses:
+        '200':
+          description: Transcription result
+        default:
+          description: Error response
+      tags:
+      - Audio
+  /audio/speech:
+    post:
+      operationId: createAudioSpeech
+      summary: Synthesize speech from text
+      responses:
+        '200':
+          description: Audio response
+        default:
+          description: Error response
+      tags:
+      - Audio
+x-generated-from: https://docs.litellm.ai/docs/completion
+x-generated-by: claude-crawl-2026-05-08
