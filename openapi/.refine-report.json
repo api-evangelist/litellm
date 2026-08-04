@@ -1,0 +1,40 @@
+{
+  "provider": "litellm",
+  "sources": [
+    "litellm-assistants-api-openapi.yml",
+    "litellm-audio-api-openapi.yml",
+    "litellm-batches-api-openapi.yml",
+    "litellm-chat-api-openapi.yml",
+    "litellm-completions-api-openapi.yml",
+    "litellm-embeddings-api-openapi.yml",
+    "litellm-fine-tuning-api-openapi.yml",
+    "litellm-images-api-openapi.yml",
+    "litellm-messages-api-openapi.yml",
+    "litellm-moderations-api-openapi.yml",
+    "litellm-ocr-api-openapi.yml",
+    "litellm-rag-api-openapi.yml",
+    "litellm-rerank-api-openapi.yml",
+    "litellm-vector-stores-api-openapi.yml"
+  ],
+  "outputs": [
+    "litellm-assistants-api-openapi.yml",
+    "litellm-audio-api-openapi.yml",
+    "litellm-batches-api-openapi.yml",
+    "litellm-chat-api-openapi.yml",
+    "litellm-completions-api-openapi.yml",
+    "litellm-embeddings-api-openapi.yml",
+    "litellm-fine-tuning-api-openapi.yml",
+    "litellm-images-api-openapi.yml",
+    "litellm-messages-api-openapi.yml",
+    "litellm-moderations-api-openapi.yml",
+    "litellm-ocr-api-openapi.yml",
+    "litellm-rag-api-openapi.yml",
+    "litellm-rerank-api-openapi.yml",
+    "litellm-vector-stores-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
