@@ -5,7 +5,7 @@
       "source": "https://docs.litellm.ai/blog/rss.xml",
       "feed_url": "https://docs.litellm.ai/blog/rss.xml",
       "title": "",
-      "saved": 0,
+      "saved": 4,
       "method": "feed"
     },
     {
@@ -13,9 +13,10 @@
       "feed_url": "https://github.com/BerriAI/litellm",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     }
   ],
-  "post_count": 65,
-  "fetched": "2026-08-06T14:08:46Z"
+  "post_count": 69,
+  "fetched": "2026-08-15T12:11:08Z"
 }
