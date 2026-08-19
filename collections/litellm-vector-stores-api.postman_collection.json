@@ -1,0 +1,203 @@
+{
+  "item": [
+    {
+      "id": "ae8a2401-24e3-4ced-8c35-3df3251f6c7a",
+      "name": "Vector Stores",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "75c478df-ca55-4088-9041-4b54f428f3ab",
+          "name": "Create a vector store",
+          "request": {
+            "name": "Create a vector store",
+            "description": {},
+            "url": {
+              "path": [
+                "vector_stores"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ab2f0664-a18c-48ed-b08f-07320ca645a9",
+              "name": "Vector store created",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "vector_stores"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "b9285fe5-e5c7-451a-996c-119b0b78422a",
+              "name": "Error response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "vector_stores"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9fedd0bd-f304-456c-ad00-55f579649036",
+          "name": "Search a vector store",
+          "request": {
+            "name": "Search a vector store",
+            "description": {},
+            "url": {
+              "path": [
+                "vector_stores",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d6563e5d-3a31-4977-b899-904c5de29481",
+              "name": "Search result",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "vector_stores",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "ccbd17e0-9548-4677-9c81-01356bad7563",
+              "name": "Error response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "vector_stores",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:4000",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "b2804a7f-1c06-409e-b0f4-d16cb3224fd0",
+    "name": "LiteLLM Proxy Assistants Vector Stores API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Minimal OpenAPI 3.1 specification for the LiteLLM proxy server, covering chat completions, completions, embeddings, audio, images, moderations, fine-tuning, batches, assistants, vector stores, messages, OCR, rerank, and RAG endpoints.",
+      "type": "text/plain"
+    }
+  }
+}

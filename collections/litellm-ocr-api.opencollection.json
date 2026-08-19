@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiteLLM Proxy Assistants Ocr API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Ocr",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Run OCR on an image",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/ocr"
+          },
+          "docs": "Run OCR on an image"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

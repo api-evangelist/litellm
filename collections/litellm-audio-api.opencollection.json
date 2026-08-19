@@ -1,0 +1,40 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiteLLM Proxy Assistants Audio API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Audio",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Transcribe audio to text",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/audio/transcriptions"
+          },
+          "docs": "Transcribe audio to text"
+        },
+        {
+          "info": {
+            "name": "Synthesize speech from text",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/audio/speech"
+          },
+          "docs": "Synthesize speech from text"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

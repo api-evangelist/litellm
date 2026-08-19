@@ -1,0 +1,40 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiteLLM Proxy Assistants Messages API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Messages",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create a message (Anthropic-compatible)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/v1/messages"
+          },
+          "docs": "Create a message (Anthropic-compatible)"
+        },
+        {
+          "info": {
+            "name": "Count tokens for a message",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/v1/messages/count_tokens"
+          },
+          "docs": "Count tokens for a message"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

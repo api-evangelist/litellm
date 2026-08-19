@@ -1,0 +1,51 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiteLLM Proxy Assistants Images API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Images",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Generate images",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/images/generations"
+          },
+          "docs": "Generate images"
+        },
+        {
+          "info": {
+            "name": "Edit an image",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/images/edits"
+          },
+          "docs": "Edit an image"
+        },
+        {
+          "info": {
+            "name": "Generate image variations",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/images/variations"
+          },
+          "docs": "Generate image variations"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,206 @@
+{
+  "item": [
+    {
+      "id": "49d29c68-e3bf-443b-b818-81fd3eddd191",
+      "name": "Rag",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e26f407f-974e-403a-a272-18f4f0b99a5c",
+          "name": "Ingest documents into a RAG index",
+          "request": {
+            "name": "Ingest documents into a RAG index",
+            "description": {},
+            "url": {
+              "path": [
+                "rag",
+                "ingest"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6ae8c7fc-cfdd-44d3-83d3-81e7a0af9f15",
+              "name": "Ingestion accepted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "rag",
+                    "ingest"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "f375559f-9c07-4beb-bf58-8f8cae9836a0",
+              "name": "Error response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "rag",
+                    "ingest"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3d4bb62f-8c31-4d81-9e1b-fdb803f19531",
+          "name": "Query a RAG index",
+          "request": {
+            "name": "Query a RAG index",
+            "description": {},
+            "url": {
+              "path": [
+                "rag",
+                "query"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5bbddf6b-7d8c-4346-b473-7599c2f33688",
+              "name": "Query result",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "rag",
+                    "query"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "d525a5aa-e393-4de3-afa5-9d1a090cdf1c",
+              "name": "Error response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "rag",
+                    "query"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:4000",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "5421b6e4-695d-4045-b689-96d9884f4868",
+    "name": "LiteLLM Proxy Assistants Rag API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Minimal OpenAPI 3.1 specification for the LiteLLM proxy server, covering chat completions, completions, embeddings, audio, images, moderations, fine-tuning, batches, assistants, vector stores, messages, OCR, rerank, and RAG endpoints.",
+      "type": "text/plain"
+    }
+  }
+}

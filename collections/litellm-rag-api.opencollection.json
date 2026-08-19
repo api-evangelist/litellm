@@ -1,0 +1,40 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiteLLM Proxy Assistants Rag API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Rag",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Ingest documents into a RAG index",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/rag/ingest"
+          },
+          "docs": "Ingest documents into a RAG index"
+        },
+        {
+          "info": {
+            "name": "Query a RAG index",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/rag/query"
+          },
+          "docs": "Query a RAG index"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiteLLM Proxy Assistants Moderations API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Moderations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Classify text for moderation",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/moderations"
+          },
+          "docs": "Classify text for moderation"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

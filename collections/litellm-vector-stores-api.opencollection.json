@@ -1,0 +1,40 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiteLLM Proxy Assistants Vector Stores API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Vector Stores",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create a vector store",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/vector_stores"
+          },
+          "docs": "Create a vector store"
+        },
+        {
+          "info": {
+            "name": "Search a vector store",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:4000/vector_stores/search"
+          },
+          "docs": "Search a vector store"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
