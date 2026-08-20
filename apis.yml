@@ -48,6 +48,10 @@ apis:
     conversation history compression via /responses/compact.
   humanURL: https://docs.litellm.ai/docs/response_api
   tags:
+  - Artificial Intelligence
+  - LLM
+  - Responses
+  tags_raw:
   - AI
   - LLM
   - Responses
@@ -61,6 +65,10 @@ apis:
     providers including OpenAI, Cohere, HuggingFace, and Bedrock with unified formatting.
   humanURL: https://docs.litellm.ai/docs/embedding/supported_embedding
   tags:
+  - Artificial Intelligence
+  - Embeddings
+  - Vectors
+  tags_raw:
   - AI
   - Embeddings
   - Vectors
@@ -74,6 +82,10 @@ apis:
     image generation and manipulation routed through the LiteLLM proxy.
   humanURL: https://docs.litellm.ai/docs/image_generation
   tags:
+  - Artificial Intelligence
+  - Generation
+  - Image
+  tags_raw:
   - AI
   - Generation
   - Images
@@ -87,6 +99,11 @@ apis:
     and text-to-speech conversion across supported providers.
   humanURL: https://docs.litellm.ai/docs/audio_transcription
   tags:
+  - Artificial Intelligence
+  - Audio
+  - Speech
+  - Transcription
+  tags_raw:
   - AI
   - Audio
   - Speech
@@ -127,6 +144,9 @@ apis:
     fine-tuning and batch processing.
   humanURL: https://docs.litellm.ai/docs/files_endpoints
   tags:
+  - File
+  - Management
+  tags_raw:
   - Files
   - Management
   properties:
@@ -179,6 +199,10 @@ apis:
     API format support through the LiteLLM proxy.
   humanURL: https://docs.litellm.ai/docs/anthropic_unified/
   tags:
+  - Artificial Intelligence
+  - Anthropic
+  - Message
+  tags_raw:
   - AI
   - Anthropic
   - Messages
@@ -192,6 +216,10 @@ apis:
     support across providers.
   humanURL: https://docs.litellm.ai/docs/realtime
   tags:
+  - Real-Time
+  - Streaming
+  - WebSocket
+  tags_raw:
   - Realtime
   - Streaming
   - WebSocket
@@ -218,6 +246,10 @@ apis:
     through supported providers via the LiteLLM proxy.
   humanURL: https://docs.litellm.ai/docs/ocr
   tags:
+  - Image
+  - OCR
+  - Text Extraction
+  tags_raw:
   - Images
   - OCR
   - Text Extraction
@@ -270,6 +302,10 @@ apis:
     via the LiteLLM proxy.
   humanURL: https://docs.litellm.ai/docs/videos
   tags:
+  - Artificial Intelligence
+  - Generation
+  - Videos
+  tags_raw:
   - AI
   - Generation
   - Videos
@@ -359,6 +395,8 @@ apis:
   description: The Fine Tuning API from LiteLLM — 1 operation(s) for fine tuning.
   humanURL: https://docs.litellm.ai/docs/completion
   tags:
+  - Fine-Tuning
+  tags_raw:
   - Fine Tuning
   properties:
   - type: OpenAPI
@@ -372,6 +410,8 @@ apis:
   description: The Images API from LiteLLM — 3 operation(s) for images.
   humanURL: https://docs.litellm.ai/docs/completion
   tags:
+  - Image
+  tags_raw:
   - Images
   properties:
   - type: OpenAPI
@@ -385,6 +425,8 @@ apis:
   description: The Messages API from LiteLLM — 2 operation(s) for messages.
   humanURL: https://docs.litellm.ai/docs/completion
   tags:
+  - Message
+  tags_raw:
   - Messages
   properties:
   - type: OpenAPI
@@ -411,6 +453,8 @@ apis:
   description: The Ocr API from LiteLLM — 1 operation(s) for ocr.
   humanURL: https://docs.litellm.ai/docs/completion
   tags:
+  - OCR
+  tags_raw:
   - Ocr
   properties:
   - type: OpenAPI
@@ -424,6 +468,8 @@ apis:
   description: The Rag API from LiteLLM — 2 operation(s) for rag.
   humanURL: https://docs.litellm.ai/docs/completion
   tags:
+  - RAG
+  tags_raw:
   - Rag
   properties:
   - type: OpenAPI
