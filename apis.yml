@@ -6,6 +6,18 @@ description: >-
   LiteLLM is an open-source Python SDK and proxy server providing a unified OpenAI-compatible interface to 100+ LLM
   providers.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -505,6 +517,9 @@ apis:
   - type: GettingStarted
     url: https://docs.litellm.ai/docs/proxy/quick_start
 common:
+  - type: CapabilityMap
+    url: capabilities/litellm-capability-edges.yml
+    name: LiteLLM Business Capability Map
   - type: AgenticAccess
     url: agentic-access/litellm-agentic-access.yml
   - type: DomainSecurity

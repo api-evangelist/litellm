@@ -1,0 +1,43 @@
+slug: litellm
+provider: LiteLLM
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Banking & Capital Markets
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: Fine Tuning
+  spec_file: litellm-fine-tuning-api-openapi.yml
+  capability_id: BC-610.60
+  capability_id_l1: BC-610
+  capability_name: Artificial Intelligence Management
+  confidence: 0.8
+  evidence: POST /fine_tuning/jobs — 'Create a fine-tuning job'
+  reason: Fine-tuning jobs are explicitly AI/ML model lifecycle (training/customisation) operations, matching
+    Artificial Intelligence Management.
+- tag: Chat
+  spec_file: litellm-chat-api-openapi.yml
+  capability_id: BC-610.60
+  capability_id_l1: BC-610
+  capability_name: Artificial Intelligence Management
+  confidence: 0.7
+  evidence: POST /chat/completions — 'Create a chat completion'
+  reason: Core LLM inference endpoint of an AI gateway; the honest mapping is AI/ML model serving under
+    Artificial Intelligence Management, not a customer-service or messaging capability.
+- tag: Completions
+  spec_file: litellm-completions-api-openapi.yml
+  capability_id: BC-610.60
+  capability_id_l1: BC-610
+  capability_name: Artificial Intelligence Management
+  confidence: 0.7
+  evidence: POST /completions — 'Create a text completion'
+  reason: Text generation inference against LLM providers; AI model consumption/serving is the only capability
+    the evidence supports.
