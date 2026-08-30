@@ -407,7 +407,7 @@ apis:
   description: The Fine Tuning API from LiteLLM — 1 operation(s) for fine tuning.
   humanURL: https://docs.litellm.ai/docs/completion
   tags:
-  - Fine-Tuning
+  - Fine Tuning
   tags_raw:
   - Fine Tuning
   properties:
@@ -465,7 +465,7 @@ apis:
   description: The Ocr API from LiteLLM — 1 operation(s) for ocr.
   humanURL: https://docs.litellm.ai/docs/completion
   tags:
-  - OCR
+  - Ocr
   tags_raw:
   - Ocr
   properties:
