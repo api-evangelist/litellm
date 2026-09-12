@@ -517,6 +517,8 @@ apis:
   - type: GettingStarted
     url: https://docs.litellm.ai/docs/proxy/quick_start
 common:
+  - type: Website
+    url: https://www.litellm.ai/
   - type: CapabilityMap
     url: capabilities/litellm-capability-edges.yml
     name: LiteLLM Business Capability Map
