@@ -531,6 +531,8 @@ apis:
   - type: GettingStarted
     url: https://docs.litellm.ai/docs/proxy/quick_start
 common:
+  - type: Plans
+    url: plans/litellm-plans-pricing.yml
   - type: Website
     url: https://www.litellm.ai/
   - type: CapabilityMap
