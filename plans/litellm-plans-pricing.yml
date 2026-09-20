@@ -10,6 +10,13 @@ provenance:
   grounding: every price_text was found verbatim in the fetched page text
 audience: business-product
 pricing_basis: negotiated
+delivery:
+  delivery: open-core
+  method: page
+  read: '2026-09-20'
+  evidence: 'LiteLLM OSS already covers the fundamentals: an OpenAI-compatible gateway, virtual keys,
+    spend tracking, budgets, fallbacks, and request/response logging.'
+  free_edition: LiteLLM OSS
 published: false
 note: No numeric price is published on the pricing page; Enterprise page lists features and deployment/support
   options but no numeric prices; free 30-day trial and SSO free up to 5 users mentioned. Pricing is 'Get
