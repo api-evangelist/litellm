@@ -33,8 +33,13 @@ accessModel:
 position: Consuming
 access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/litellm.png
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
+x-docs-hosting: vercel
 tags:
   - Gateways
+  - AI Gateway
 created: '2026-03-03'
 modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/litellm/refs/heads/master/apis.yml
