@@ -7,7 +7,7 @@ servers:
 - url: http://localhost:4000
   description: LiteLLM proxy server
 tags:
-- name: Chat
+- name: Chat Completions
 paths:
   /chat/completions:
     post:
@@ -19,6 +19,6 @@ paths:
         default:
           description: Error response
       tags:
-      - Chat
+      - Chat Completions
 x-generated-from: https://docs.litellm.ai/docs/completion
 x-generated-by: claude-crawl-2026-05-08

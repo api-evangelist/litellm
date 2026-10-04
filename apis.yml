@@ -382,19 +382,6 @@ apis:
     url: https://docs.litellm.ai/docs/completion
   - type: GettingStarted
     url: https://docs.litellm.ai/docs/proxy/quick_start
-- aid: litellm:litellm-chat-api
-  name: LiteLLM Chat API
-  description: The Chat API from LiteLLM — 1 operation(s) for chat.
-  humanURL: https://docs.litellm.ai/docs/completion
-  tags:
-  - Chat
-  properties:
-  - type: OpenAPI
-    url: openapi/litellm-chat-api-openapi.yml
-  - type: Documentation
-    url: https://docs.litellm.ai/docs/completion
-  - type: GettingStarted
-    url: https://docs.litellm.ai/docs/proxy/quick_start
 - aid: litellm:litellm-completions-api
   name: LiteLLM Completions API
   description: The Completions API from LiteLLM — 1 operation(s) for completions.
@@ -531,6 +518,19 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/litellm-vector-stores-api-openapi.yml
+  - type: Documentation
+    url: https://docs.litellm.ai/docs/completion
+  - type: GettingStarted
+    url: https://docs.litellm.ai/docs/proxy/quick_start
+- aid: litellm:litellm-chat-completions-api
+  name: LiteLLM Chat Completions API
+  description: The Chat Completions API from LiteLLM — 1 operation(s) for chat completions.
+  humanURL: https://docs.litellm.ai/docs/text_completion
+  tags:
+  - Chat Completions
+  properties:
+  - type: OpenAPI
+    url: openapi/litellm-chat-completions-api-openapi.yml
   - type: Documentation
     url: https://docs.litellm.ai/docs/completion
   - type: GettingStarted
