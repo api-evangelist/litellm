@@ -33,3 +33,23 @@ plans:
   included_quota: 'Guaranteed response times: Sev 0 1 hour, Sev 1 6 hours'
 rate_limit_statements:
 - Per-project budgets, rate limits, and model allowlists
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Enterprise (Self-Hosted)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: 24/7 Support SLAs
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
