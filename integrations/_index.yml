@@ -311,10 +311,10 @@
   relationship: system-coverage
   status: not-a-workflow
   arazzo: null
-- slug: litellm-gemini
-  label: gemini
-  partner: gemini
-  partner_name: gemini
+- slug: litellm-google-gemini
+  label: google-gemini
+  partner: google-gemini
+  partner_name: google-gemini
   type: coverage
   channel: provider-built
   evidence: https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
