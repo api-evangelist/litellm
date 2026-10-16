@@ -110,10 +110,10 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 148
+      models: 147
       router_ids:
       - azure_ai
-      tools_share: 0.78
+      tools_share: 0.77
       structured_output_share: 0.35
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
@@ -313,7 +313,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 47
+      models: 58
       router_ids:
       - dashscope
       tools_share: 1.0
@@ -333,7 +333,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 92
+      models: 114
       router_ids:
       - qwen_ai_platform
       - qwencloud
@@ -551,7 +551,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 209
+      models: 211
       router_ids:
       - vertex_ai
       - vertex_ai-ai21_models
@@ -568,7 +568,7 @@ edges:
       - vertex_ai-text-models
       - vertex_ai-video-models
       - vertex_ai-zai_models
-      tools_share: 0.81
+      tools_share: 0.82
       structured_output_share: 0.5
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
@@ -585,11 +585,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 84
+      models: 85
       router_ids:
       - gemini
-      tools_share: 0.72
-      structured_output_share: 0.65
+      tools_share: 0.73
+      structured_output_share: 0.66
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -605,11 +605,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 43
+      models: 44
       router_ids:
       - github_copilot
       tools_share: 1.0
-      structured_output_share: 0.5
+      structured_output_share: 0.48
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -844,7 +844,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 10
+      models: 12
       router_ids:
       - minimax
       tools_share: 1.0
@@ -1310,7 +1310,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 58
+      models: 61
       router_ids:
       - xai
       tools_share: 1.0
@@ -1428,7 +1428,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 3
+      models: 4
       router_ids:
       - typesafe
   matched_by: verified-token-table
