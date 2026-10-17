@@ -19,7 +19,9 @@
     "litellm-rerank-api-openapi.yml",
     "litellm-vector-stores-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -59,13 +61,14 @@
     "litellm-openapi.yml: declared missing tag: Rag",
     "litellm-openapi.yml: declared missing tag: Rerank",
     "litellm-openapi.yml: declared missing tag: Vector Stores",
-    "apis.yml register: already-registered"
+    "superseded outputs removed: litellm-chat-completions-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 33 total)"
   ],
   "skipped": [
     "litellm-assistants-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "litellm-audio-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "litellm-batches-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "litellm-chat-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "litellm-chat-completions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "litellm-completions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "litellm-embeddings-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "litellm-fine-tuning-api-openapi.yml: previously refined output, superseded by openapi/_original/",
