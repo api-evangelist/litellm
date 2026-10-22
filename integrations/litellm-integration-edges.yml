@@ -11,7 +11,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 577
+      models: 591
       router_ids:
       - bedrock
       - bedrock_converse
@@ -110,10 +110,10 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 147
+      models: 148
       router_ids:
       - azure_ai
-      tools_share: 0.77
+      tools_share: 0.78
       structured_output_share: 0.35
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
@@ -130,13 +130,13 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 241
+      models: 242
       router_ids:
       - chatgpt
       - openai
       - text-completion-openai
-      tools_share: 0.9
-      structured_output_share: 0.69
+      tools_share: 0.89
+      structured_output_share: 0.68
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -354,11 +354,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 64
+      models: 66
       router_ids:
       - databricks
-      tools_share: 0.86
-      structured_output_share: 0.04
+      tools_share: 0.83
+      structured_output_share: 0.03
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -392,11 +392,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 134
+      models: 136
       router_ids:
       - deepinfra
       tools_share: 0.91
-      structured_output_share: 0.48
+      structured_output_share: 0.49
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -412,7 +412,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 14
+      models: 18
       router_ids:
       - volcengine
       tools_share: 1.0
@@ -510,11 +510,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 334
+      models: 337
       router_ids:
       - fireworks_ai
       - fireworks_ai-embedding-models
-      tools_share: 0.27
+      tools_share: 0.28
       structured_output_share: 0.33
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
@@ -551,7 +551,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 211
+      models: 212
       router_ids:
       - vertex_ai
       - vertex_ai-ai21_models
@@ -569,7 +569,7 @@ edges:
       - vertex_ai-video-models
       - vertex_ai-zai_models
       tools_share: 0.82
-      structured_output_share: 0.5
+      structured_output_share: 0.51
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -605,11 +605,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 44
+      models: 49
       router_ids:
       - github_copilot
       tools_share: 1.0
-      structured_output_share: 0.48
+      structured_output_share: 0.55
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -625,11 +625,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 27
+      models: 32
       router_ids:
       - baseten
-      tools_share: 0.67
-      structured_output_share: 0.67
+      tools_share: 0.72
+      structured_output_share: 0.69
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -924,7 +924,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 61
+      models: 62
       router_ids:
       - nebius
       tools_share: 0.93
@@ -944,11 +944,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 44
+      models: 50
       router_ids:
       - oci
-      tools_share: 0.94
-      structured_output_share: 0.17
+      tools_share: 0.95
+      structured_output_share: 0.15
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -1004,7 +1004,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 90
+      models: 94
       router_ids:
       - perplexity
       tools_share: 0.0
@@ -1176,11 +1176,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 89
+      models: 93
       router_ids:
       - together_ai
-      tools_share: 0.2
-      structured_output_share: 0.18
+      tools_share: 0.24
+      structured_output_share: 0.22
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
@@ -1290,11 +1290,11 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 30
+      models: 31
       router_ids:
       - wandb
-      tools_share: 0.1
-      structured_output_share: 0.07
+      tools_share: 0.13
+      structured_output_share: 0.1
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
